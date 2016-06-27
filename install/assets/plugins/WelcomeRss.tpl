@@ -1,5 +1,20 @@
 //<?php
 /**
+ * WelcomeRSSReader
+ *
+ * Dashboard RSS widget plugin for EvoDashboard
+ *
+ * @author    Nicola Lambathakis http://www.tattoocms.it/
+ * @category    plugin
+ * @version    3.0 RC
+ * @license	 http://www.gnu.org/copyleft/gpl.html GNU Public License (GPL)
+ * @internal    @events OnManagerWelcomeHome
+ * @internal    @installset base
+ * @internal    @modx_category Dashboard
+ * @internal    @properties  &WidgetTitle=Widget Title:;string;RSS Reader &FeedUrl=Rss url:;string;http://www.tattoocms.it/feed.rss &rssitemsnumber=Feed items number:;string;3 &datarow=widget row position:;list;1,2,3,4,5,6,7,8,9,10;1 &datacol=widget col position:;list;1,2,3,4;1 &datasizex=widget x size:;list;1,2,3,4;4 &datasizey=widget y size:;list;1,2,3,4,5,6,7,8,9,10;2
+ * /
+ 
+/**
  * WelcomeRSSReader RC 3.0
  * author Nicola Lambathakis http://www.tattoocms.it/
  *
