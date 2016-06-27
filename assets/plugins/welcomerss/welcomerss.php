@@ -5,7 +5,7 @@
  *
  * RSS widget plugin for EvoDashboard
  * Event: OnManagerWelcomeHome,OnManagerMainFrameHeaderHTMLBlock
-&WidgetTitle=Widget Title:;string;RSSReader &FeedUrl=css file path:;string;http://www.tattoocms.it/feed.rss &rssitemsnumber=Feed items number:;string;3 &datarow=widget row position:;list;1,2,3,4,5,6,7,8,9,10;1 &datacol=widget col position:;list;1,2,3,4;1 &datasizex=widget x size:;list;1,2,3,4;4 &datasizey=widget y size:;list;1,2,3,4,5,6,7,8,9,10;2
+&WidgetTitle=Widget Title:;string;RSS Reader &FeedUrl=Rss url:;string;http://www.tattoocms.it/feed.rss &rssitemsnumber=Feed items number:;string;3 &datarow=widget row position:;list;1,2,3,4,5,6,7,8,9,10;1 &datacol=widget col position:;list;1,2,3,4;1 &datasizex=widget x size:;list;1,2,3,4;4 &datasizey=widget y size:;list;1,2,3,4,5,6,7,8,9,10;2
 ****
 */
 // Run the main code
