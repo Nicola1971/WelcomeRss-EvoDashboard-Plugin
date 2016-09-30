@@ -1,11 +1,11 @@
 <?php
 /**
- * WelcomeRSSReader RC 3.0
+ * WelcomeRSSReader RC 3.1
  * author Nicola Lambathakis http://www.tattoocms.it/
  *
- * RSS widget plugin for EvoDashboard
+ * RSS widget plugin for EvoDashboard 
  * Event: OnManagerWelcomeHome,OnManagerMainFrameHeaderHTMLBlock
-&WidgetTitle=Widget Title:;string;RSS Reader &FeedUrl=Rss url:;string;http://www.tattoocms.it/feed.rss &rssitemsnumber=Feed items number:;string;3 &datarow=widget row position:;list;1,2,3,4,5,6,7,8,9,10;1 &datacol=widget col position:;list;1,2,3,4;1 &datasizex=widget x size:;list;1,2,3,4;4 &datasizey=widget y size:;list;1,2,3,4,5,6,7,8,9,10;2
+&WidgetTitle=Widget Title:;string;RSS Reader &WidgetIcon=Widget Icon:;string;fa-rss-square &FeedUrl=Rss url:;string;http://www.tattoocms.it/feed.rss &rssitemsnumber=Feed items number:;string;3 &datarow=widget row position:;list;1,2,3,4,5,6,7,8,9,10;1 &datacol=widget col position:;list;1,2,3,4;1 &datasizex=widget x size:;list;1,2,3,4;2 &datasizey=widget y size:;list;1,2,3,4,5,6,7,8,9,10;4  &WidgetID= Unique Widget ID:;string;RSS-widget
 ****
 */
 // Run the main code
@@ -73,6 +73,7 @@ foreach ($urls as $section=>$url) {
 
 //widget name
 $WidgetID = isset($WidgetID) ? $WidgetID : 'RSS-widget';
+$WidgetIcon = isset($WidgetIcon) ? $WidgetIcon : 'fa-rss-square';
 // size and position
 $datarow = isset($datarow) ? $datarow : '1';
 $datacol = isset($datacol) ? $datacol : '2';
@@ -91,7 +92,7 @@ $WidgetOutput = '
 <li id="'.$WidgetID.'" data-row="'.$datarow.'" data-col="'.$datacol.'" data-sizex="'.$datasizex.'" data-sizey="'.$datasizey.'">
                     <div class="panel panel-default widget-wrapper">
                       <div class="panel-headingx widget-title sectionHeader clearfix">
-                          <span class="pull-left"><i class="fa fa-rss-square"></i> '.$WidgetTitle.'</span>
+                          <span class="pull-left"><i class="fa '.$WidgetIcon.'"></i> '.$WidgetTitle.'</span>
                             <div class="widget-controls pull-right">
                                 <div class="btn-group">
                                     <a href="#" class="btn btn-default btn-xs panel-hide hide-full glyphicon glyphicon-minus" data-id="'.$WidgetID.'"></a>
